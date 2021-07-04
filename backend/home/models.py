@@ -4,11 +4,15 @@ from django.db import models
 
 class CustomText(models.Model):
     "Generated Model"
-    breakinh = models.CharField(
-        max_length=150,
+    breaking = models.CharField(
         blank=True,
+        max_length=150,
     )
     videos = models.TextField(
+        null=True,
+        blank=True,
+    )
+    local = models.TextField(
         null=True,
         blank=True,
     )

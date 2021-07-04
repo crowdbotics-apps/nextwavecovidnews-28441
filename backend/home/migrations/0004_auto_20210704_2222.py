@@ -6,17 +6,17 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0003_customtext_videos'),
+        ("home", "0003_customtext_videos"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='customtext',
-            name='title',
+            model_name="customtext",
+            name="title",
         ),
         migrations.AddField(
-            model_name='customtext',
-            name='breakinh',
+            model_name="customtext",
+            name="breakinh",
             field=models.CharField(blank=True, max_length=150),
         ),
     ]
