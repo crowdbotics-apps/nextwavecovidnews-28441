@@ -4,8 +4,9 @@ from django.db import models
 
 class CustomText(models.Model):
     "Generated Model"
-    title = models.CharField(
+    breakinh = models.CharField(
         max_length=150,
+        blank=True,
     )
     videos = models.TextField(
         null=True,
